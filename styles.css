@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+body {
+    overflow-x: hidden;
+    background-color: hsl(30, 38%, 92%);
+    font-family: 'Fraunces',
+        serif;
+    font-family: Montserrat;
+
+
+}
+
+.container {
+    margin: 1em auto;
+    width: 90%;
+    
+    
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    background-color: white;
+    border-radius: 1em;
+    overflow: hidden;
+
+}
+
+.card-col-img {
+    background-image: url(/images/image-product-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+}
+
+.card-body{
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+.card-title{
+    color: hsl(212, 21%, 14%);
+    font-weight: 700;
+    font-size: 2.2em;
+    font-family: 'Fraunces',
+    serif;
+    
+}
+
+.card-subtitle{
+     color: hsl(228, 12%, 48%);
+     padding-top: 2em;
+     padding-bottom: 1em;
+     font-weight: 500;
+     letter-spacing: .3rem;
+     font-size: .9em;
+}
+
+.text{
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+    font-size: 14px;
+    font-family: Montserrat;
+    letter-spacing: .1rem;
+    word-spacing: 2px;
+    line-height: 1.7em;
+    padding-top: 1em;
+    padding-bottom: 2.7em;
+}
+
+.precio-nuevo{
+     color: hsl(158, 36%, 37%);
+     font-weight: 700;
+     font-size: 2rem;
+     font-family: 'Fraunces',
+     serif;
+     
+}
+
+.precio-viejo {
+    text-decoration-line: line-through;
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+    padding-left: 1.5em;
+
+}
+
+.price {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    border-radius: .2em;
+    font-size: 1rem;
+    font-weight: 700;
+    width: 100%;
+    padding: 1em;
+    
+}
+
+.fa-duotone {
+    padding-right: 1rem;
+}
+
+.container-button{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+@media (min-width: 768px){
+    .card{
+        display: flex;  
+                                                            
+    }
+
+     .cards {
+         align-items: center;
+         height: 100vh;
+     }
+
+    .card-col-img{
+        height: auto;
+        flex:  1;
+        background-image: url(/images/image-product-desktop.jpg);
+        background-size: 100% auto;
+        
+    }
+
+    .container {
+        margin-top: 0;
+        margin-bottom: 0;
+
+    }
+
+    .card-col-body{
+        flex: 1;
+    }
+
+    .precio-viejo {
+       
+        padding-left: 1em;
+
+    }
+
+   
+
+    
+}
