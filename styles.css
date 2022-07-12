@@ -6,7 +6,7 @@
 
 
 body {
-    
+
     overflow-x: hidden;
     /* background-color: cyan; */
     background-color: hsl(30, 38%, 92%);
@@ -25,15 +25,15 @@ body {
     
 } */
 
- .container {
+.container {
     margin-top: 1em;
-     margin-left: auto;
-     margin-right: auto;
-     margin-bottom: 1em;
-     width: 90%;
- }
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+    width: 90%;
+}
 
-.cards{
+.cards {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,30 +54,30 @@ body {
     height: 300px;
 }
 
-.card-body{
+.card-body {
     padding-left: 1.5em;
     padding-right: 1.5em;
 }
 
-.card-title{
+.card-title {
     color: hsl(212, 21%, 14%);
     font-weight: 700;
     font-size: 2.2em;
     font-family: 'Fraunces',
-    serif;
-    
+        serif;
+
 }
 
-.card-subtitle{
-     color: hsl(228, 12%, 48%);
-     padding-top: 2em;
-     padding-bottom: 1em;
-     font-weight: 500;
-     letter-spacing: .3rem;
-     font-size: .9em;
+.card-subtitle {
+    color: hsl(228, 12%, 48%);
+    padding-top: 2em;
+    padding-bottom: 1em;
+    font-weight: 500;
+    letter-spacing: .3rem;
+    font-size: .9em;
 }
 
-.text{
+.text {
     color: hsl(228, 12%, 48%);
     font-weight: 500;
     font-size: 14px;
@@ -89,13 +89,13 @@ body {
     padding-bottom: 2.7em;
 }
 
-.precio-nuevo{
-     color: hsl(158, 36%, 37%);
-     font-weight: 700;
-     font-size: 2rem;
-     font-family: 'Fraunces',
-     serif;
-     
+.precio-nuevo {
+    color: hsl(158, 36%, 37%);
+    font-weight: 700;
+    font-size: 2rem;
+    font-family: 'Fraunces',
+        serif;
+
 }
 
 .precio-viejo {
@@ -114,26 +114,78 @@ body {
 button {
     background-color: hsl(158, 36%, 37%);
     color: white;
-    border-radius: .2em;
+    border-radius: .4em;
     font-size: 1rem;
     font-weight: 700;
     width: 100%;
     padding: 1em;
-    
+
 }
 
 .fa-duotone {
     padding-right: 1rem;
 }
 
-.container-button{
+.container-button {
     padding-top: 1em;
     padding-bottom: 1em;
 }
 
-@media (min-width: 426px){
+@media (min-width: 426px) {
 
-    .card{
+    body {
+        display: grid;
+        place-content: center;
+        height: 100vh;
+        padding: 0;
+    }
+
+    .card {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: min(561px);
+        height: 19em;
+    }
+
+    .card-col-img {
+
+        background-image: url(/images/image-product-desktop.jpg);
+        background-size: cover;
+        height: 19em;
+    }
+
+    .card-subtitle{
+        font-size: .6em;
+        padding-bottom: 1.3em;
+    }
+
+    .card-title{
+      font-size: 1.5em;
+      line-height: 1em;
+    }
+
+    .text{
+      line-height: 1.3em;
+      letter-spacing: 0;
+      word-spacing: .2em;
+      padding-bottom: 2em;
+    }
+
+    .precio-nuevo{
+      font-size: 1.5rem;
+    }
+
+    button{
+       padding: .7em;
+       font-size: .8rem;
+       font-weight: 500;
+    }
+
+
+   
+
+    /* .card{
         display: flex;  
         margin-top: 5em;
         max-width: 1000px;
@@ -151,6 +203,9 @@ button {
         height: auto;
         flex:  1;
         background-image: url(/images/image-product-desktop.jpg);
+        background-size: cover;
+        background-position: center ;
+        
         
         
     }
@@ -168,10 +223,11 @@ button {
 
      .container {
          margin-top: 0%;
+         
 
 
-     }
+     } */
 
-   
+
 
 }
