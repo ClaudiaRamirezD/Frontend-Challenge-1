@@ -8,8 +8,8 @@
 body {
     
     overflow-x: hidden;
-    background-color: cyan;
-    /* background-color: hsl(30, 38%, 92%); */
+    /* background-color: cyan; */
+    background-color: hsl(30, 38%, 92%);
     font-family: 'Fraunces',
         serif;
     font-family: Montserrat;
